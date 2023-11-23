@@ -1,31 +1,34 @@
 <?php
 
-/*
- * Complete the 'miniMaxSum' function below.
- *
- * The function accepts INTEGER_ARRAY arr as parameter.
- */
+declare(strict_types=1);
 
-function miniMaxSum($arr) {
-    
-    $min_sum = PHP_INT_MAX;
-    $max_sum = PHP_INT_MIN;
-    $total_sum = array_sum($arr);
-    
-    foreach($arr as $value) {
-        
-        $parcial_sum = $total_sum - $value;
-        
-        if($parcial_sum > $max_sum) {
-            $max_sum = $parcial_sum;
-        }
-        
-        if ($parcial_sum < $min_sum) {
-            $min_sum = $parcial_sum;
-        }
-    }
-    
-    echo $min_sum . ' ' . $max_sum;
+
+/**
+ * Calculates the minimum and maximum sums of an array.
+ *
+ * @param array $arr The input array.
+ * @throws None
+ * @return void
+ */
+function miniMaxSum($arr)
+{
+	$min_sum = PHP_INT_MAX;
+	$max_sum = PHP_INT_MIN;
+	$total_sum = array_sum($arr);
+	
+	foreach ($arr as $value) {
+		$parcial_sum = $total_sum - $value;
+		
+		if ($parcial_sum > $max_sum) {
+			$max_sum = $parcial_sum;
+		}
+		
+		if ($parcial_sum < $min_sum) {
+			$min_sum = $parcial_sum;
+		}
+	}
+	
+	echo $min_sum . ' ' . $max_sum;
 }
 
 $arr_temp = rtrim(fgets(STDIN));

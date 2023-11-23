@@ -1,4 +1,4 @@
-# Hackerrank exercises
+# Challenges PHP
 
 This is a small repository where I keep the code for solving some exercises on the Hackerrank page.
 
