@@ -1,0 +1,18 @@
+{
+    "name": "nicolas/php-test",
+    "description": "Proyect to save test examples",
+    "autoload": {
+        "psr-4": {
+            "Nicolas\\PhpTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nicolas",
+            "email": "nicolas.aguilar180193@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "codelytv/coding-style": "^1.2"
+    }
+}
